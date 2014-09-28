@@ -1,0 +1,7 @@
+
+makef:	main.c call.o
+	gcc main.c call.o -o makef
+call.o: call.c call.h
+	gcc -c call.c -o call.o 
+clean:
+	rm makef
